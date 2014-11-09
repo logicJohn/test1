@@ -1,3 +1,6 @@
+// Testing only file
+// Do not submit
+
 
 #include "pqueue.h"
 #include <iostream>
@@ -11,7 +14,6 @@ int main()
 	PQItemType x="hello";
 	PQPriorityType p=5;
 	PriorityQueue q;
-	PriorityQueue temp;
 
 	int choice, item, priority;
 	do
@@ -35,7 +37,7 @@ int main()
             remove(q,x,p);
             break;
         case 3:
-			
+			PriorityQueue temp;
 			temp.next=q.next;
            	while( !isEmpty(temp) )
 			{
