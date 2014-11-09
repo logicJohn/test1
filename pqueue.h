@@ -15,7 +15,7 @@ typedef double PQPriorityType;
 
 struct PQCell;
 
-struct PriorityQueue;
+typedef struct PriorityQueue;
 
 
 //isEmpty(x) is true if s is an empty set

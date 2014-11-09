@@ -1,6 +1,36 @@
 // Testing only file
 // Do not submit
 
+#include "pqueue.h"
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+#include <cstdlib>
+#include "pqueue.cpp"
+
+using namespace std;
+
+int main()
+{
+	PQItemType x;
+	x="hello";
+	PQPriorityType p;
+	p=5;
+	PriorityQueue origin;
+	if(!isEmpty(origin))
+	{
+		insert(origin, x, p);
+		cout << origin.next->item;
+		remove(origin, x, p);
+		cout << x;
+		cout << p;
+
+		return 1;
+	}
+
+
+}
+/*
 
 #include "pqueue.h"
 #include <iostream>
@@ -34,17 +64,22 @@ int main()
             //insert(q,x,p);
             break;
         case 2:
+
             remove(q,x,p);
             break;
+
         case 3:
-			PriorityQueue temp;
+			
+			struct PriorityQueue temp;
 			temp.next=q.next;
            	while( !isEmpty(temp) )
 			{
 				temp.next=temp.next->next;
 				std::cout << temp.next->item;
 			}
-			temp= q;
+			
+			break;
+
         case 4:
             break;
         default :
@@ -54,3 +89,6 @@ int main()
 	while(choice !=4);
 	return 1;
 }
+
+
+*/

@@ -31,6 +31,8 @@ struct PQCell
 	}
 };
 
+typedef struct PriorityQueue;
+
 struct PriorityQueue
 {
 	PQCell *next;			//pointer to the linked list items
@@ -51,7 +53,7 @@ bool isEmpty(const PriorityQueue& q)
 }
 
 //==============================================================
-//                      remove
+//                  insertCell
 //==============================================================
 // this will remove the first PQCell of q and return item and
 // priority using, q will then be pointed at the second PQCell 
