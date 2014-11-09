@@ -1,14 +1,25 @@
-﻿Build started 11/8/2014 10:57:46 PM.
+﻿Build started 11/8/2014 11:25:54 PM.
      1>Project "C:\Users\johnnie\documents\visual studio 2012\Projects\priority queues\priority queues\priority queues.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp pqueue.cpp
+         pqueue.cpp
+     1>c:\users\johnnie\documents\visual studio 2012\projects\priority queues\priority queues\pqueue.cpp(34): warning C4091: 'typedef ' : ignored on left of 'PriorityQueue' when no variable is declared
          Source.cpp
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\johnnie\documents\visual studio 2012\Projects\priority queues\Debug\priority queues.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\johnnie\documents\visual studio 2012\Projects\priority queues\Debug\priority queues.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\johnnie\documents\visual studio 2012\Projects\priority queues\Debug\priority queues.lib" /MACHINE:X86 Debug\pqueue.obj
-         Debug\Source.obj
-     1>LINK : fatal error LNK1561: entry point must be defined
+     1>c:\users\johnnie\documents\visual studio 2012\projects\priority queues\priority queues\source.cpp(19): error C2079: 'origin' uses undefined struct 'PriorityQueue'
+     1>c:\users\johnnie\documents\visual studio 2012\projects\priority queues\priority queues\source.cpp(20): error C2664: 'isEmpty' : cannot convert parameter 1 from 'int' to 'const PriorityQueue &'
+                 Reason: cannot convert from 'int' to 'const PriorityQueue'
+                 Source or target has incomplete type
+     1>c:\users\johnnie\documents\visual studio 2012\projects\priority queues\priority queues\source.cpp(22): error C2664: 'insert' : cannot convert parameter 1 from 'int' to 'PriorityQueue &'
+     1>c:\users\johnnie\documents\visual studio 2012\projects\priority queues\priority queues\source.cpp(23): error C2228: left of '.next' must have class/struct/union
+                 type is 'int'
+     1>c:\users\johnnie\documents\visual studio 2012\projects\priority queues\priority queues\source.cpp(23): error C2227: left of '->item' must point to class/struct/union/generic type
+     1>c:\users\johnnie\documents\visual studio 2012\projects\priority queues\priority queues\source.cpp(24): error C2665: 'remove' : none of the 2 overloads could convert all the argument types
+                 c:\users\johnnie\documents\visual studio 2012\projects\priority queues\priority queues\pqueue.h(32): could be 'void remove(PriorityQueue &,PQItemType &,PQPriorityType &)'
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(281): or       'int remove(const char *)'
+                 while trying to match the argument list '(int, PQItemType, PQPriorityType)'
+         Generating Code...
      1>Done Building Project "C:\Users\johnnie\documents\visual studio 2012\Projects\priority queues\priority queues\priority queues.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:00.15
+Time Elapsed 00:00:00.74
