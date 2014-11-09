@@ -1,9 +1,7 @@
-﻿Build started 11/8/2014 11:25:54 PM.
+﻿Build started 11/8/2014 11:28:11 PM.
      1>Project "C:\Users\johnnie\documents\visual studio 2012\Projects\priority queues\priority queues\priority queues.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp pqueue.cpp
-         pqueue.cpp
-     1>c:\users\johnnie\documents\visual studio 2012\projects\priority queues\priority queues\pqueue.cpp(34): warning C4091: 'typedef ' : ignored on left of 'PriorityQueue' when no variable is declared
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
          Source.cpp
      1>c:\users\johnnie\documents\visual studio 2012\projects\priority queues\priority queues\source.cpp(19): error C2079: 'origin' uses undefined struct 'PriorityQueue'
      1>c:\users\johnnie\documents\visual studio 2012\projects\priority queues\priority queues\source.cpp(20): error C2664: 'isEmpty' : cannot convert parameter 1 from 'int' to 'const PriorityQueue &'
@@ -17,9 +15,8 @@
                  c:\users\johnnie\documents\visual studio 2012\projects\priority queues\priority queues\pqueue.h(32): could be 'void remove(PriorityQueue &,PQItemType &,PQPriorityType &)'
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(281): or       'int remove(const char *)'
                  while trying to match the argument list '(int, PQItemType, PQPriorityType)'
-         Generating Code...
      1>Done Building Project "C:\Users\johnnie\documents\visual studio 2012\Projects\priority queues\priority queues\priority queues.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:00.74
+Time Elapsed 00:00:00.37

@@ -16,7 +16,7 @@ int main()
 	x="hello";
 	PQPriorityType p;
 	p=5;
-	PriorityQueue origin;
+	struct PriorityQueue origin;
 	if(!isEmpty(origin))
 	{
 		insert(origin, x, p);

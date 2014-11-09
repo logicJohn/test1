@@ -31,7 +31,6 @@ struct PQCell
 	}
 };
 
-typedef PriorityQueue;
 
 struct PriorityQueue
 {
